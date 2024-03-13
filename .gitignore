@@ -1,0 +1,11 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+.DS_STORE
+.env
+*.log*
+.eslintcache
+*.DS_Store
+node_modules

@@ -1,0 +1,112 @@
+{
+  "name": "shadcn",
+  "version": "0.0.1",
+  "displayName": "shadcn",
+  "description": "Incorporate elements and code fragments from Shadcn seamlessly into your IDE.",
+  "publisher": "Jonjc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonjc/vscode-shadcn"
+  },
+  "bugs": {
+    "url": "https://github.com/jonjc/vscode-shadcn/issues",
+    "email": "jonathancho.jc@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.54.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "shadcn",
+    "shadcn-snippet",
+    "shadcn-snippets",
+    "snippet",
+    "snippets",
+    "shadcn snippets"
+  ],
+  "icon": "src/images/icon.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./src/snippets/imports.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/snippets/imports.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./src/snippets/help.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./src/snippets/help.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/snippets/help.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./src/snippets/usage.code-snippets"
+      }
+    ],
+    "commands": [
+      {
+        "command": "shadcn.initCli",
+        "title": "shadcn: Install CLI"
+      },
+      {
+        "command": "shadcn.addNewComponent",
+        "title": "shadcn: Add New Component"
+      },
+      {
+        "command": "shadcn.addMultipleComponents",
+        "title": "shadcn: Add Multiple Components"
+      },
+      {
+        "command": "shadcn.gotoComponentDoc",
+        "title": "shadcn: Open Component Documentation"
+      },
+      {
+        "command": "shadcn.reloadComponentList",
+        "title": "shadcn: Reload Component List"
+      },
+      {
+        "command": "shadcn.gotoDoc",
+        "title": "shadcn: Open Documentation"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm build",
+    "generate:release": "npx changelogen@latest --release",
+    "build": "tsup",
+    "dev": "pnpm build -- --watch",
+    "deploy": "vsce publish --no-dependencies",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "20.2.5",
+    "@types/vscode": "^1.54.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.24.0",
+    "ofetch": "^1.3.3"
+  }
+}
