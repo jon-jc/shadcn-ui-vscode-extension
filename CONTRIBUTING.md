@@ -16,7 +16,7 @@ We employ semantic versioning, issuing patch releases for fixes and non-disrupti
 
 ## Reporting Issues
 
-If you find a bug or have a suggestion for vscode-shadcn-vue, please report it through [GitHub issues](https://github.com/selemondev/vscode-shadcn-vue/issues). Follow these steps when reporting:
+If you find a bug or have a suggestion for vscode-shadcn-vue, please report it through [GitHub issues](https://github.com/jon-jc/shadcn-ui-vscode-extension/issues). Follow these steps when reporting:
 
 1. **Search for Similar Issues**: Verify that the issue has not been reported or discussed previously.
 
