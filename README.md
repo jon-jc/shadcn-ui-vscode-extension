@@ -6,6 +6,19 @@ We're grateful for your interest and efforts in contributing to this project! Yo
 
 Development takes place on GitHub. Contributions are made through pull requests, which are reviewed following the same code review process for both core team members and external contributors.
 
+### Credits
+
+All credits go to these amazing developers
+
+-[Selemondev](https://github.com/selemondev/vscode-shadcn-vue) for creating the Shadcn vue extension.
+
+- [Shadcn UI](https://ui.shadcn.com) for creating this beautiful project.
+- [Shadcn Vue](https://shadcn-vue.com) for creating the Vue port of Shadcn UI.
+- [Radix Vue](https://radix-vue.com) for doing all the hard work to make sure components are accessible.
+- [VueUse](https://vueuse.org) for providing many useful utilities.
+- [Suhel Makkad](https://github.com/SuhelMakkad/vscode-shadcn-ui) for creating the Shadcn UI VSCode extension.
+- [Neeraj Dalal](https://github.com/nrjdalal/shadcn-ui-snippets) for creating the Shadcn UI Snippets VSCode extension.
+
 ## Semantic Versioning
 
 We adhere to semantic versioning principles. This means patch releases address bugs and non-breaking changes, minor releases introduce backward-compatible new features, and major releases introduce changes that might break backward compatibility.
